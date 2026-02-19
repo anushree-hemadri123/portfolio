@@ -2,49 +2,67 @@ import React from "react";
 
 export default function App() {
   return (
-    <div className="bg-[#0b0b0b] text-white min-h-screen">
-      
+    <div className="bg-[#0f0f0f] text-white min-h-screen font-sans">
+
       {/* HERO */}
-      <section className="p-10 text-center">
-        <h1 className="text-5xl font-bold">Anushree Hemadri</h1>
-        <p className="mt-3 text-gray-400 text-lg">
-          Full Stack Developer | AI/ML Enthusiast
+      <section className="h-screen flex flex-col justify-center items-center text-center px-6">
+        <h1 className="text-6xl font-bold tracking-tight">
+          Anushree Hemadri
+        </h1>
+        <p className="mt-4 text-xl text-gray-400">
+          Full Stack Developer • AI/ML Enthusiast
         </p>
 
-        <div className="mt-5 space-x-4">
-          <a href="https://github.com/yourgithub" className="underline">
+        <div className="mt-6 flex gap-6">
+          <a
+            href="https://github.com/YOURUSERNAME"
+            className="px-6 py-2 bg-white text-black rounded-full font-medium hover:scale-105 transition"
+          >
             GitHub
           </a>
-          <a href="https://linkedin.com/in/yourlinkedin" className="underline">
+
+          <a
+            href="https://linkedin.com/in/YOURUSERNAME"
+            className="px-6 py-2 border border-white rounded-full hover:bg-white hover:text-black transition"
+          >
             LinkedIn
           </a>
         </div>
       </section>
 
       {/* PROJECTS */}
-      <section className="p-10">
-        <h2 className="text-3xl font-semibold">Projects</h2>
+      <section className="px-10 py-20 max-w-6xl mx-auto">
+        <h2 className="text-4xl font-bold mb-12 text-center">Projects</h2>
 
-        <div className="grid md:grid-cols-2 gap-6 mt-6">
+        <div className="grid md:grid-cols-2 gap-8">
 
-          <div className="bg-[#161616] p-6 rounded-xl">
-            <h3 className="text-xl font-bold">EV Charging Station Finder</h3>
-            <p className="text-gray-400 mt-2">
-              Map-based app to locate EV stations using MERN + Leaflet.
+          <div className="bg-[#1a1a1a] p-8 rounded-2xl hover:scale-105 transition">
+            <h3 className="text-2xl font-semibold">
+              EV Charging Station Finder
+            </h3>
+            <p className="text-gray-400 mt-3">
+              MERN-based application to locate nearby EV charging stations
+              with map integration and route optimization.
             </p>
           </div>
 
-          <div className="bg-[#161616] p-6 rounded-xl">
-            <h3 className="text-xl font-bold">Health Insurance Predictor</h3>
-            <p className="text-gray-400 mt-2">
-              ML model predicting insurance cost using Python & Sklearn.
+          <div className="bg-[#1a1a1a] p-8 rounded-2xl hover:scale-105 transition">
+            <h3 className="text-2xl font-semibold">
+              Health Insurance Predictor
+            </h3>
+            <p className="text-gray-400 mt-3">
+              Machine learning model predicting insurance premiums using
+              regression and feature engineering.
             </p>
           </div>
 
-          <div className="bg-[#161616] p-6 rounded-xl">
-            <h3 className="text-xl font-bold">Smart Petrol Planner</h3>
-            <p className="text-gray-400 mt-2">
-              Trip planner with fuel estimation and route optimization.
+          <div className="bg-[#1a1a1a] p-8 rounded-2xl hover:scale-105 transition">
+            <h3 className="text-2xl font-semibold">
+              Smart Petrol Pump Planner
+            </h3>
+            <p className="text-gray-400 mt-3">
+              Trip planning app calculating fuel needs and identifying petrol
+              pumps along routes.
             </p>
           </div>
 
@@ -52,20 +70,21 @@ export default function App() {
       </section>
 
       {/* SKILLS */}
-      <section className="p-10">
-        <h2 className="text-3xl font-semibold">Skills</h2>
-        <p className="mt-3 text-gray-400">
-          React, Node.js, MongoDB, Python, Machine Learning, AWS, Git
+      <section className="bg-[#111] py-16 text-center">
+        <h2 className="text-3xl font-bold">Tech Stack</h2>
+        <p className="text-gray-400 mt-4 max-w-3xl mx-auto">
+          React • Node.js • MongoDB • Express • Python • Machine Learning • AWS • Git • REST APIs
         </p>
       </section>
 
       {/* CONTACT */}
-      <section className="p-10 text-center">
-        <h2 className="text-3xl">Contact</h2>
-        <p className="text-gray-400 mt-2">
+      <section className="py-20 text-center">
+        <h2 className="text-3xl font-bold">Let's Connect</h2>
+        <p className="text-gray-400 mt-4">
           anushreehemadri30@gmail.com
         </p>
       </section>
+
     </div>
   );
 }
